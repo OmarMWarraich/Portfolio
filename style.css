@@ -54,10 +54,12 @@
 
 .intro-flex > h1 {
   font-size: 6.4vw;
+  color: #5E42D7;
 }
 
 .intro-flex > h2 {
   font-size: 4.25vw;
+  margin-top: 2.5vw;
 }
 
 .about-flex {
@@ -97,11 +99,21 @@
 .skills-flex > div > ul > li {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin-bottom: 1vw;
+}
+
+.skills-flex > div > h4 {
+    color: #5E42D7;
+    margin-bottom: 2vw;
 }
 
 .media-flex {
-  padding: 0 28vw;
-  display: flex;
-  justify-content: space-between;
-}
+    padding: 0 28vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5vw;
+  }
+
+    .media-flex > li {
+        list-style-type: none;
+    }
