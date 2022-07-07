@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
@@ -39,6 +39,7 @@
 
 .header-flex > a > h5 {
   color: #fff;
+  opacity: 50%;
 }
 
 .container-flex {
@@ -98,16 +99,22 @@
 }
 
 .skills-flex {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-items: baseline;
-  width: 87.2vw;
   text-align: center;
-  flex-wrap: wrap;
   margin-top: 0.5rem;
   line-height: 3rem;
-  padding-left: 6.4vw;
+  background-image: url('./assets/Ellipse\ 19(1).svg');
+  background-repeat: no-repeat;
+  background-position: right;
 }
+
+.skills-flex > div {
+  margin-right: 6vw;
+  margin-left: 6vw;
+}
+
 
 .skills-flex > div > ul {
   list-style-type: none;
@@ -133,4 +140,122 @@
   height: 100%;
   margin-top: 2rem;
   flex-wrap: wrap;
+}
+
+.body-wrapper > span {
+  content: \2193;
+}
+
+span {
+  font-size: 3rem;
+  text-align: center;
+  color: #c8c8d4;
+  margin-top: 3rem;
+}
+
+.works-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 6.4vw;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.works-flex > h1 {
+  font-style: Medium;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  color: #9490FF;
+}
+
+.works-flex > hr {
+  width: 87.2vw;
+  border-bottom: 1px solid #c8c8d4;
+  margin-top: 3rem;
+}
+
+
+.content-flex > .layout-flex > div {
+  height: 236px;
+  width: 327px;
+  text-align: center;
+  padding: 15px;
+  border: 3px solid #7d73fc;
+  background-color: #fff;
+  margin-top: 2rem;
+}
+
+.content-flex > .layout-flex > div > img {
+  max-width: 100%;
+}
+
+.content-flex > .layout-flex > h2 {
+  margin-top: 2rem;
+  color: #fff;
+  text-align: left;
+}
+
+.content-flex > .layout-flex > p {
+  margin-top: 2rem;
+  color: #fff;
+  text-align: left;
+  padding-right: 2rem;
+}
+
+.content-flex > .layout-flex > ul {
+  list-style-type: none;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.content-flex > .layout-flex > ul > li {
+  padding: 1rem;
+  color: #fff;
+}
+
+.content-flex > .layout-flex > ul > .border {
+  border-left: 1px solid #7d73fc;
+  padding: 1rem;
+}
+
+.content-flex > .layout-flex > button {
+  background-color: #7d73fc;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+}
+
+footer > h1 {
+  margin-top: 1rem;
+  color: #9390FF;
+  font-size: 1.5rem;
+}
+
+footer > p {
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+.project-flex > #ellipse > .layout-flex {
+  background-image: url('./assets/Ellipse19.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
 }
