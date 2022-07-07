@@ -42,6 +42,18 @@
   opacity: 50%;
 }
 
+footer > h1 {
+  margin-top: 1rem;
+  color: #9390ff;
+  font-size: 1.5rem;
+}
+
+footer > p {
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 1.125rem;
+}
+
 .container-flex {
   display: flex;
   flex-direction: column;
@@ -115,7 +127,6 @@
   margin-left: 6vw;
 }
 
-
 .skills-flex > div > ul {
   list-style-type: none;
 }
@@ -142,10 +153,6 @@
   flex-wrap: wrap;
 }
 
-.body-wrapper > span {
-  content: \2193;
-}
-
 span {
   font-size: 3rem;
   text-align: center;
@@ -163,10 +170,10 @@ span {
 }
 
 .works-flex > h1 {
-  font-style: Medium;
+  font-style: medium;
   font-size: 2.5rem;
   line-height: 3.25rem;
-  color: #9490FF;
+  color: #9490ff;
 }
 
 .works-flex > hr {
@@ -174,7 +181,6 @@ span {
   border-bottom: 1px solid #c8c8d4;
   margin-top: 3rem;
 }
-
 
 .content-flex > .layout-flex > div {
   height: 236px;
@@ -240,22 +246,4 @@ span {
 footer {
   padding: 2rem;
   text-align: center;
-}
-
-footer > h1 {
-  margin-top: 1rem;
-  color: #9390FF;
-  font-size: 1.5rem;
-}
-
-footer > p {
-  margin-top: 1rem;
-  color: #fff;
-  font-size: 1.125rem;
-}
-
-.project-flex > #ellipse > .layout-flex {
-  background-image: url('./assets/Ellipse19.svg');
-  background-repeat: no-repeat;
-  background-position: left center;
 }
