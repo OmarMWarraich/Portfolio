@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 .body-wrapper {
@@ -15,51 +16,29 @@
   padding: 0;
 }
 
-.nav-flex {
+#nav {
+  list-style: none;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
-  top: 0;
-  bottom: 3rem;
-  padding: 40px 20px;
-  left: 0;
-  width: 100%;
-  height: 3rem;
-  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  padding: 0 10px;
   position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
 }
 
-.nav-flex > a {
-  text-decoration: none;
+#nav #union {
+  margin-right: 1.5rem;
 }
 
-.nav-flex > a > h5 {
+#nav #logo {
+  margin-left: 1.5rem;
   color: #fff;
-  opacity: 50%;
-}
-
-footer > h1 {
-  margin-top: 1rem;
-  color: #9390ff;
-  font-size: 1.5rem;
-}
-
-footer > p {
-  margin-top: 1rem;
-  color: #fff;
-  font-size: 1.125rem;
 }
 
 .container-flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  /* justify-content: center; */
   background-image: url('./assets/Ellipse\ 18.svg');
   background-repeat: no-repeat;
   margin-top: 5rem;
@@ -87,48 +66,62 @@ footer > p {
 .container-flex > p {
   font-size: 1.125rem;
   color: #c8c8d4;
-  margin-bottom: 1rem;
   align-items: center;
-  width: 87.2vw;
-  margin-top: 2rem;
+  margin: 2rem 1.5rem;
   text-align: center;
   line-height: 2rem;
   vertical-align: top;
 }
 
 .body-wrapper > hr {
-  width: 87.2vw;
   border-bottom: 1px solid #c8c8d4;
-  margin-left: 6.4vw;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   margin-top: 0.5rem;
 }
 
 .container-flex > hr {
   vertical-align: top;
-  width: 87.2vw;
   border-bottom: 1px solid #c8c8d4;
-  margin-top: 0.5rem;
+  margin: 0 1.5rem;
 }
 
 .skills-flex {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   align-items: baseline;
-  text-align: center;
-  margin-top: 0.5rem;
-  line-height: 3rem;
-  background-image: url('./assets/Ellipse\ 19(1).svg');
+  line-height: 1.5rem;
+  background-image: url('./assets/Ellipse19.svg');
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: top right;
 }
 
 .skills-flex > div {
-  margin-right: 6vw;
-  margin-left: 6vw;
+  margin-left: 2.7rem;
+  margin-right: 2.7rem;
+  vertical-align: center;
+}
+
+.layout-flex > ul {
+  list-style-type: none;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .skills-flex > div > ul {
   list-style-type: none;
+}
+
+.layout-flex > ul > li {
+  padding: 0.5rem;
+  color: #fff;
+  border-left: 1px solid #81818c;
+  border-right: 1px solid  #81818c;
 }
 
 .skills-flex > div > ul > li {
@@ -138,8 +131,8 @@ footer > p {
 
 .skills-flex > div > h4 {
   color: #7d73fc;
-  margin-top: 2rem;
-  font-size: 1.2rem;
+  margin-top: 1.8rem;
+  font-size: 0.8rem;
 }
 
 .media-flex {
@@ -157,16 +150,14 @@ span {
   font-size: 3rem;
   text-align: center;
   color: #c8c8d4;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .works-flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 6.4vw;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 .works-flex > h1 {
@@ -174,63 +165,62 @@ span {
   font-size: 2.5rem;
   line-height: 3.25rem;
   color: #9490ff;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .works-flex > hr {
-  width: 87.2vw;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   border-bottom: 1px solid #c8c8d4;
-  margin-top: 3rem;
+  margin-top: 0.5rem;
 }
 
-.content-flex > .layout-flex > div {
+.project-flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background:
+    url('./assets/Ellipse19(1).svg') left top no-repeat,
+    url(./assets/Ellipse\ 20.svg) right top 700px no-repeat,
+    url(./assets/Ellipse\ 21.svg) left bottom 800px no-repeat,
+    url(./assets/Ellipse\ 22.svg) right bottom 150px no-repeat;
+}
+
+.layout-flex > div {
   height: 236px;
   width: 327px;
   text-align: center;
-  padding: 15px;
-  border: 3px solid #7d73fc;
-  background-color: #fff;
-  margin-top: 2rem;
+  padding: 0;
+  border: no-border;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
-.content-flex > .layout-flex > div > img {
-  max-width: 100%;
+.layout-flex > div > img {
+  height: 100%;
+  width: 100%;
 }
 
-.content-flex > .layout-flex > h2 {
+.layout-flex > h2 {
   margin-top: 2rem;
   color: #fff;
   text-align: left;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
-.content-flex > .layout-flex > p {
+.layout-flex > p {
   margin-top: 2rem;
   color: #fff;
   text-align: left;
   padding-right: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
-.content-flex > .layout-flex > ul {
-  list-style-type: none;
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.content-flex > .layout-flex > ul > li {
-  padding: 1rem;
-  color: #fff;
-}
-
-.content-flex > .layout-flex > ul > .border {
-  border-left: 1px solid #7d73fc;
-  padding: 1rem;
-}
-
-.content-flex > .layout-flex > button {
+.btn {
   background-color: #7d73fc;
   border: none;
   color: #fff;
@@ -241,9 +231,46 @@ span {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  margin-left: 1.5rem;
 }
 
-footer {
+.btn:hover {
+  background-color: #7d73fc;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+.btn:focus {
+  background-color: #5e42d7;
+}
+
+.btn:disabled {
+  background-color: #2a2b33;
+  cursor: not-allowed;
+}
+
+.footer {
   padding: 2rem;
   text-align: center;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.footer > h1 {
+  margin-top: 1rem;
+  color: #9390ff;
+  font-size: 1.5rem;
+}
+
+.footer > p {
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+@media only screen and (min-device-width: 480px) {
+  /* STYLES HERE for DEVICES with physical max-screen width of 480px */
+  .project-flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
+  }
 }
