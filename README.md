@@ -10,7 +10,7 @@
 
 ## Live Demo 
 
-[Live Demo Link]()
+[Live Demo Link](https://ova-portfolio.netlify.app/)
 
 ## Getting Started
 
