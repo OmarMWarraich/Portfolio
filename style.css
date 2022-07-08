@@ -15,7 +15,7 @@
   padding: 0;
 }
 
-.header-flex {
+.nav-flex {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -33,11 +33,11 @@
   position: fixed;
 }
 
-.header-flex > a {
+.nav-flex > a {
   text-decoration: none;
 }
 
-.header-flex > a > h5 {
+.nav-flex > a > h5 {
   color: #fff;
   opacity: 50%;
 }
