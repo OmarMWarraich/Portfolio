@@ -160,8 +160,16 @@
             </div>
         </section>
         <section class="footer">
-            <h1>CONTACT US</h1>
-            <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+            <div class="form">
+              <h1>CONTACT US</h1>
+              <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+              <form action="https://formspree.io/f/xlezyzng" method="post">
+                <input type="text"  name="name" class="name" placeholder="Name" maxlength="30" required>
+                <input type="email" name="email" class="email" placeholder="Email" required>
+                <textarea name="message" class="text" id="message" cols="30" rows="10" placeholder="Enter text here." maxlength="500" required></textarea>
+                <button type="submit" class="btn">Submit</button>
+              </form>
+            </div>
         </section>
         <br>
         <br>
