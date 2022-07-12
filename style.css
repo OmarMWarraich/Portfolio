@@ -293,7 +293,6 @@ form > textarea {
   color: #c8c8d4;
 }
 
-
 @media only screen and (min-device-width: 480px) {
   /* STYLES HERE for DEVICES with physical max-screen width of 480px */
   .project-flex {
