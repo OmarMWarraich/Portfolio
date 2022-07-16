@@ -11,7 +11,7 @@
   background-color: #191675;
   display: flex;
   flex-direction: column;
-  /* min-width: 100%; */
+  min-width: 100%;
   width: 100vw;
   height: 100%;
   margin: 0;
@@ -34,22 +34,22 @@
   top: 0;
   overflow: hidden;
   width: 87.2vw;
-  height: 92px;
+  height: 24.53vw;
   left: 0px;
   top: 0px;
 }
 
-#nav #union {
+#union {
   margin-right: 1.5rem;
 }
 
-#nav #logo {
-  width: 81px;
-  height: 16px;
+#logo {
+  width: 21.6vw;
+  height: 4.27vw;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 16px;
+  font-size: 4.8vw;
+  /* line-height: 4.27vw; */
   display: flex;
   align-items: center;
   text-align: center;
@@ -66,21 +66,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 24px;
+  padding: 32vw 6.4vw;
   gap: 40px;
   /* position: absolute; */
   width: 100%;
   /* height: 1316.15px; */
   left: 0px;
-  top: 19px;
+  top: 5vw;
 }
 
 .hero h1{
   width: 87.2vw;
-  height: 55px;
+  height: 14.67vw;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 72px;
+  font-size: 12.8vw;
+  line-height: 19.2vw;
   text-align: center;
   letter-spacing: 0.37px;
   color: #7D73FC;
@@ -90,11 +90,11 @@
 
 .title h2 {
   width: 87.2vw;
-  height: 87px;
+  height: 23.2vw;
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 8.53vw;
+  line-height: 11.73vw;
   display: flex;
   align-items: center;
   text-align: center;
@@ -106,11 +106,11 @@
 
 .description p{
   width: 87.2vw;
-  height: 170px;
+  height: 45.33vw;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 5.33vw;
+  line-height: 7.47vw;
   text-align: center;
   color: #C8C8D4;
   flex: none;
@@ -131,7 +131,7 @@
 
 .skills-flex {
   display: grid;
-  grid-template-columns: repeat(2, minmax(187.5px, 1fr));
+  grid-template-columns: repeat(2, minmax(50vw, 1fr));
   background-image: url('./assets/Ellipse19.svg');
   background-repeat: no-repeat;
   background-position: top right;
@@ -142,11 +142,11 @@
 .skills-flex div ul li {
   list-style-type: none;
 
-  height: 14px;
+  height: 3.73vw;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 4vw;
   margin-top: 1.33rem;
   align-items: center;
   color: #F5F5FF;
@@ -156,12 +156,12 @@
 }
 
 .trait h4 {
-  width: 107px;
-  height: 16px;
+  width: 28.53vw;
+  height: 4.27vw;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 3.27vw;
+  line-height: 4.27vw;
   letter-spacing: 0.03em;
   color: #9490FF;
   flex: none;
@@ -174,9 +174,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 10px;
-  gap: 40px;
-  width: 375px;
+  padding: 0 2.67vw;
+  gap: 10.66vw;
+  width: 100%;
+  height: 100%;
   left: 0px;
 }
 
@@ -185,8 +186,8 @@
   text-align: center;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 5.33vw;
+  line-height: 8.53vw;
 }
 
 .media-flex .top-span {
@@ -194,7 +195,7 @@
 }
 
 .media-flex .icons a {
-  margin-left: 20px;
+  margin-left: 5.33vw;
 }
 
 /* WORK SECTION */
@@ -204,19 +205,19 @@
   flex-direction: column;
   /* align-items: center; */
   /* justify-content: center; */
-  padding: 0 10px;
+  padding: 0 2.66vw;
   width: 100vw;
   /* left: 0px; */
   font-style: normal;
   /* font-weight: 500; */
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 10.66vw;
+  line-height: 13.86vw;
   vertical-align: top;
 }
 
 .caption {
   width: 87.2vw;
-  height: 104px;
+  height: 27.73vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -237,9 +238,9 @@
 }
 
 .work-container img {
-  margin-top: 110px;
+  margin-top: 29.33vw;
   width: 87.2vw;
-  height: 236px;
+  height: 62.93vw;
   background: linear-gradient(0deg, #F9F9F9, #F9F9F9);
   margin-left: 0.7rem;
 }
@@ -247,11 +248,11 @@
 
 .specs .hero1 {
   margin-top: 0.8rem;
-  font-size: 32px;
+  font-size: 8.53vw;
   margin-left: 0.5rem;
   width: 87.2vw;
-  height: 105px;
-  line-height: 44px;
+  height: 28vw;
+  line-height: 11.73vw;
   display: flex;
   align-items: center;
   color: #FFFFFF;
@@ -260,12 +261,12 @@
 .specs p {
   margin-left: 0.5rem;
   width: 87.2vw;
-  height: 204px;
+  height: 54.4vw;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 5.33vw;
+  line-height: 7.46vw;
   color: #DCDCE8;
   flex: none;
   order: 1;
@@ -277,18 +278,18 @@
   justify-content: space-evenly;
   color: #FFFFFF;
   align-items: center;
-  font-size: 15px;
+  font-size: 4vw;
   font-weight: normal;
-  line-height: 20px;
+  line-height: 5.33vw;
   margin-left: 1rem;
   margin-right: 2.5rem;
   margin-top: 1rem;
 }
 
 .specs ul li {
-  height: 40px;
+  height: 10.66vw;
   text-align: center;
-  padding: 8px 20px;
+  padding: 2.13vw 5.33vw;
   justify-items: center;
 }
 
@@ -300,12 +301,12 @@
   background-color: #7d73fc;
   border: none;
   color: #fff;
-  padding: 10px;
+  padding: 2.66vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 4.26vw;
+  margin: 1.06vw 5.33vw;
   cursor: pointer;
   margin-left: 0.7rem;
 }
@@ -324,7 +325,34 @@
   cursor: not-allowed;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  .body-wrapper {
+    background: black;
+  }
+
+  #union {
+    display: none;
+  }
+
+  #nav {
+    display: grid;
+    grid-template-columns: [sidebar] 5fr [content] 1fr [sidebar] 1fr 1fr 1fr;
+    width: 100vw;
+    /* z-index: 1; */
+    padding: 0 2.66vw;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .portfolio, .about, .contact {
+    display: grid;
+    grid-template-columns: [sidebar] 1fr [content] 2fr [sidebar] 1fr;
+    margin-left: 2.67vw;
+  }
+
+  .portfolio a, .about a, .contact a {
+    text-decoration: none;
+  }
+
   
 }
 
