@@ -644,6 +644,11 @@
     padding: 0;
   }
 
+  .work-container .img img:hover,
+  .work-container1 .img img:hover {
+    transform: scale(1.25, 1.25);
+  }
+
   .specs {
     margin: 0;
     padding: 0;
