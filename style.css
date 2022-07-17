@@ -407,7 +407,7 @@
   justify-content: center;
 }
 
-.footer-bottom .icons{
+.footer-bottom .icons {
   margin: auto;
 }
 
@@ -621,6 +621,7 @@
 
   .work-container {
     width: 100%;
+
     /* margin: 0; */
     padding: 0;
     display: grid;
@@ -721,7 +722,5 @@
 
   .icons {
     display: flex;
-
   }
-
 }
