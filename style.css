@@ -71,7 +71,7 @@
 
 #hero h1:hover {
   transform: scale(2, 0.5); /* Equal to scaleX(2) scaleY(0.5) */
-  transform-origin: left;
+  transform-origin: center;
   background-color: pink;
 }
 
@@ -433,6 +433,14 @@
   .contact a {
     text-decoration: none;
     color: #fff;
+    transition: all 0.5s ease-out;
+  }
+
+  .portfolio a:hover,
+  .about a:hover,
+  .contact a:hover {
+    background-color: #fff;
+    color: #333;
   }
 
   #logo {
