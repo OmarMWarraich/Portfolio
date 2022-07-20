@@ -153,8 +153,6 @@
   margin-top: 0.625rem;
 }
 
-/* Skills-flex */
-
 .skills-flex {
   display: grid;
   grid-template-columns: repeat(2, minmax(50vw, 1fr));
@@ -229,8 +227,6 @@
   margin-right: 5px;
   margin-left: 5px;
 }
-
-/* WORK SECTION */
 
 .work-flex {
   display: flex;
