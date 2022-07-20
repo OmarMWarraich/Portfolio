@@ -165,6 +165,10 @@
   margin-top: 35px;
 }
 
+.specs ul li {
+  padding: 10px 15px;
+}
+
 .skills-flex div ul li {
   list-style-type: none;
   font-style: normal;
@@ -176,7 +180,7 @@
 }
 
 #framework {
-  margin-right: 60px;
+  margin-right: 80px;
 }
 
 .trait h4 {
@@ -201,7 +205,7 @@
   width: 130px;
   height: 90px;
   left: 0;
-  margin-top: 9px;
+  margin-top: 30px;
 }
 
 .media-flex .bottom-span {
@@ -231,38 +235,38 @@
 .work-flex {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   vertical-align: top;
+}
+
+.work-flex hr {
+  width: 327px;
+  height: 1px;
+  background-color: #fff;
+  margin: 0 2rem 0 1rem;
 }
 
 .caption {
   width: 87.2vw;
   color: #9490ff;
-
-  /* flex: none;
-  order: 0; */
   vertical-align: top;
   margin-left: 1.5rem;
-  margin-right: 1.5rem;
 }
 
-.caption hr {
-  height: 0;
-  width: 100%;
-  border: 1px solid #646369;
-  margin-top: 1.5rem;
-}
-
-.work-container,
-.work-container1 {
+.work-container1,
+.work-container2,
+.work-container3,
+.work-container4 {
   width: 87.2vw;
   margin: auto;
   display: flex;
   flex-direction: column;
 }
 
-.work-container img,
-.work-container1 img {
+.work-container1 img,
+.work-container2 img,
+.work-container3 img,
+.work-container4 img {
   margin-top: 48px;
   width: 100%;
   height: 236px;
@@ -272,8 +276,6 @@
 .specs .hero1 {
   margin-top: 24px;
   height: 105px;
-
-  /* padding: 0 15px; */
   display: flex;
   align-items: center;
   color: #fff;
@@ -299,7 +301,7 @@
 .specs ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   color: #fff;
   align-items: center;
   font-size: 15px;
@@ -389,9 +391,16 @@
   height: 48px;
 }
 
-/* .form .btn {
-  margin-left: 21vw;
-} */
+.flname .lname,
+.flname .fname {
+  display: none;
+}
+
+.flname .nname {
+  display: block;
+  width: 100%;
+  height: 48px;
+}
 
 .body-wrapper hr {
   width: 100%;
@@ -412,6 +421,11 @@
 
 .footer-bottom .icons {
   margin: auto;
+}
+
+.form form .btn {
+  margin-top: 24px;
+  margin-left: 34vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -811,8 +825,13 @@
     height: 48px;
   }
 
-  .fname,
-  .lname {
+  .flname .nname {
+    display: none;
+  }
+
+  .flname .fname,
+  .flname .lname {
+    display: block;
     width: 22.84vw;
   }
 
@@ -829,14 +848,14 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0 30px;
+    padding: 10px 50px;
   }
 
   .footer-email {
-    margin-right: 40px;
+    margin-right: 10vw;
   }
 
   .footer-bottom .icons {
-    margin-left: 40px;
+    margin-left: 10vw;
   }
 }
