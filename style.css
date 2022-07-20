@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
 
-
 * {
   margin: 0;
   padding: 0;
@@ -70,15 +69,6 @@
   margin-top: 12px;
 }
 
-#hero h1 {
-  display: inline-block;
-  font-weight: 900;
-  font-size: 36px;
-  text-align: center;
-  letter-spacing: 0.37px;
-  color: #7d73fc;
-}
-
 .caption h1 {
   font-style: normal;
   font-weight: 500;
@@ -96,6 +86,15 @@
   text-align: center;
   color: #9390ff;
   margin-top: 120px;
+}
+
+#hero h1 {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.37px;
+  color: #7d73fc;
 }
 
 #hero h1:hover {
@@ -425,10 +424,10 @@
     grid-template-columns: [introduction] 13fr [portfolio] 1fr [about] 1fr [contact] 1fr [contact] 1fr;
     justify-items: flex-start;
     align-items: center;
-    grid-gap: 0px;
+    grid-gap: 0;
     position: fixed;
     overflow: hidden;
-    top: 0px;
+    top: 0;
     right: 24px;
     height: 72px;
   }
@@ -450,17 +449,17 @@
     transition: all 0.5s ease-out;
   }
 
+  #logo {
+    margin-left: 120px;
+    margin-bottom: 2px;
+  }
+
   .portfolio a:hover,
   .about a:hover,
   .contact a:hover,
   #logo:hover {
     background-color: #fff;
     color: #333;
-  }
-
-  #logo {
-    margin-left: 120px;
-    margin-bottom: 2px;
   }
 
   .container-flex {
@@ -490,11 +489,33 @@
     align-items: flex-end;
   }
 
+  .caption h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 114px;
+    text-transform: lowercase;
+  }
+
+  .chat h1 {
+    font-style: normal;
+    font-size: 40px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .specs .hero1 h1 {
+    font-size: 40px;
+    line-height: 52px;
+    text-align: left;
+  }
+
   #hero h1 {
     line-height: 105.47px;
     font-size: 54px;
     font-style: normal;
-    color: #9391FF;
+    color: #9391ff;
     letter-spacing: 0.37px;
     font-weight: 700;
   }
@@ -512,7 +533,7 @@
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
-    color: #DFE1E6;
+    color: #dfe1e6;
     letter-spacing: 0.37px;
     max-width: 448px;
     align-items: baseline;
@@ -533,7 +554,7 @@
     font-size: 20px;
     line-height: 32px;
     text-align: center;
-    color: #B3BAC5;
+    color: #b3bac5;
   }
 
   .skills-flex {
@@ -550,16 +571,6 @@
 
   .trait {
     text-align: left;
-    
-  }
-
-  .specs .ul ul li {
-    height: 20px;
-    padding: 0px 20px 20px 20px;
-    color: #fff;
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 20px;
   }
 
   .skills-flex div ul li {
@@ -574,6 +585,15 @@
     flex: none;
     order: 0;
     text-align: left;
+  }
+
+  .specs .ul ul li {
+    height: 20px;
+    padding: 0 20px 20px 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 20px;
   }
 
   .trait h4 {
@@ -620,17 +640,20 @@
     gap: 50px;
     padding: 0;
     position: relative;
-    background-image: url(./assets/Desktop3.svg),
-                      url(./assets/Desktop4.svg), 
-                      url(./assets/Desktop5.svg), 
-                      url(./assets/Desktop6.svg);
-    background-repeat: no-repeat,
-                       no-repeat, 
-                       no-repeat;
-    background-position: top 230px left,
-                         center right,
-                         bottom 450px left,
-                         bottom 140px right;
+    background-image:
+      url(./assets/Desktop3.svg),
+      url(./assets/Desktop4.svg),
+      url(./assets/Desktop5.svg),
+      url(./assets/Desktop6.svg);
+    background-repeat:
+      no-repeat,
+      no-repeat,
+      no-repeat;
+    background-position:
+      top 230px left,
+      center right,
+      bottom 450px left,
+      bottom 140px right;
   }
 
   .caption {
@@ -644,15 +667,7 @@
     align-items: flex-end;
   }
 
-  .caption h1 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 64px;
-    line-height: 114px;
-    text-transform: lowercase;
-  }
-
-  .caption h1:first-letter {
+  .caption h1::first-letter {
     text-transform: capitalize;
   }
 
@@ -717,19 +732,23 @@
     align-items: center;
     color: #fff;
     height: 105px;
-
-  }
-
-  .specs .hero1 h1 {
-    font-size: 40px;
-    line-height: 52px;
-    text-align: left;
   }
 
   .specs .p {
     height: 140px;
     margin-top: 18px;
+  }
 
+  .chat-desc {
+    margin-top: 85px;
+    height: 61px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .chat-desc p {
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .specs .p p {
@@ -751,7 +770,7 @@
   }
 
   .work-container2,
-  .work-container4{
+  .work-container4 {
     box-sizing: inherit;
     padding: 0;
     display: grid;
@@ -786,38 +805,19 @@
     margin-bottom: 50px;
   }
 
-  .chat h1 {
-    font-style: normal;
-    font-size: 40px;
-    line-height: 24px;
-    font-weight: 700;
-    text-align: center;
-  }
-
-  .chat-desc {
-    margin-top: 85px;
-    height: 61px;
-    text-align: center;
-    align-items: center;
-  }
-
-  .chat-desc p {
-    font-size: 20px;
-    line-height: 28px;
-  }
-
   .flname {
     display: flex;
     gap: 24px;
     height: 48px;
   }
-  
-  .fname, .lname {
+
+  .fname,
+  .lname {
     width: 22.84vw;
   }
 
   .form form .btn {
-    margin:88px 18.19vw;
+    margin: 88px 18.19vw;
     width: 160px;
     height: 48px;
     padding: 12px;
@@ -829,15 +829,14 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0px 30px;
-    
+    padding: 0 30px;
   }
+
   .footer-email {
-    margin-right:40px;
+    margin-right: 40px;
   }
 
   .footer-bottom .icons {
-    margin-left:40px;
+    margin-left: 40px;
   }
-
 }
