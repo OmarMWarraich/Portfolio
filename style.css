@@ -43,7 +43,7 @@
   justify-content: flex-start;
 }
 
-.main_nav li{
+.main_nav li {
   list-style: none;
   width: 100%;
   height: 50px;
@@ -54,17 +54,19 @@
   text-decoration: none;
 }
 
-.nav_link1, .nav_link2, .nav_link3, .nav_link4 {
+.nav_link1,
+.nav_link2,
+.nav_link3,
+.nav_link4 {
   color: #fff;
   text-decoration: none;
 }
-
 
 .navbar_toggle {
   margin-left: 5%;
   margin-right: 5%;
   font-size: 30px;
-  color: #ffffff;
+  color: #fff;
   background: transparent;
   border-color: transparent;
   transition: all 0.3s linear;
@@ -72,10 +74,12 @@
   display: block;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 35px;
   height: 5px;
-  background-color: #ffffff;
+  background-color: #fff;
   margin: 6px 0;
   transition: all 0.4s linear;
 }
@@ -100,12 +104,11 @@
   text-decoration: none;
 }
 
-.logo_header{
+.logo_header {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
-
 
 .container-flex {
   background-image: url('./assets/Ellipse\ 18.svg');
@@ -476,41 +479,42 @@
 }
 
 @media screen and (min-width: 768px) {
-  *{
+  * {
     margin: 0;
     padding: 0;
   }
-  
-  a{
+
+  a {
     text-decoration: none;
   }
-  
-  .navbar_toggle{
+
+  .navbar_toggle {
     display: none;
   }
 
-  .navbar{
+  .navbar {
     display: flex;
     justify-content: space-between;
     width: 100vw;
     padding-top: 2%;
     padding-bottom: 2%;
-    background-color: #000000;
+    background-color: #000;
     font-size: 20px;
   }
-  
-  .logo{
+
+  .logo {
     margin-left: 5%;
-    color: #ffffff;
+    color: #fff;
     font-size: 25px;
     font-weight: bold;
   }
-  .logo_header{
+
+  .logo_header {
     display: flex;
     margin-left: 2%;
   }
-  
-  .main_nav{
+
+  .main_nav {
     display: flex;
     width: 50%;
     float: right;
@@ -518,57 +522,29 @@
     justify-content: space-between;
     list-style: none;
   }
-  .main_nav li:hover{
-    background-color: gray
-  }
-  
-  .main_nav li{
+
+  .main_nav li {
     display: inline;
-    color: #ffffff;
-  }
-  .main_nav li a{
-    color: #ffffff;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /* #union {
-    display: none;
+    color: #fff;
   }
 
-  .nav {
-    display: grid;
-    grid-template-columns: [introduction] 13fr [portfolio] 1fr [about] 1fr [contact] 1fr [contact] 1fr;
-    justify-items: flex-start;
+  .skills-flex div ul li {
+    list-style-type: none;
+    height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 1.33rem;
     align-items: center;
-    grid-gap: 0;
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    right: 24px;
-    height: 72px;
+    color: #f5f5ff;
+    flex: none;
+    order: 0;
+    text-align: left;
   }
 
-  .main_nav {
-    display: grid;
-    padding: 0 5px;
-    text-align: center;
+  .main_nav li:hover {
+    background-color: gray;
   }
-
-  /* .portfolio,
-  .about,
-  .contact,
-  .email {
-    display: grid;
-    padding: 0 5px;
-    text-align: center;
-  } */
 
   .portfolio a,
   .about a,
@@ -576,6 +552,10 @@
     text-decoration: none;
     color: #fff;
     transition: all 0.5s ease-out;
+  }
+
+  .main_nav li a {
+    color: #fff;
   }
 
   #logo {
@@ -589,8 +569,7 @@
   #logo:hover {
     background-color: #fff;
     color: #333;
-  } */
-
+  }
 
   .container-flex {
     padding: 5px 5px;
@@ -700,20 +679,6 @@
   }
 
   .trait {
-    text-align: left;
-  }
-
-  .skills-flex div ul li {
-    list-style-type: none;
-    height: 24px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    margin-top: 1.33rem;
-    align-items: center;
-    color: #f5f5ff;
-    flex: none;
-    order: 0;
     text-align: left;
   }
 
