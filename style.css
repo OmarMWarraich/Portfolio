@@ -54,6 +54,11 @@
   text-decoration: none;
 }
 
+.nav_link1, .nav_link2, .nav_link3, .nav_link4 {
+  color: #fff;
+  text-decoration: none;
+}
+
 
 .navbar_toggle {
   margin-left: 5%;
