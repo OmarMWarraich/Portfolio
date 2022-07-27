@@ -7,19 +7,46 @@ const navLink4 = document.querySelector('.nav_link4');
 const bar1 = document.querySelector('.bar1');
 const bar2 = document.querySelector('.bar2');
 const bar3 = document.querySelector('.bar3');
+var i = 0;
+
+
+
+function disable() {
+    // To get the scroll position of current webpage
+    TopScroll = window.pageYOffset || document.documentElement.scrollTop;
+    LeftScroll = window.pageXOffset || document.documentElement.scrollLeft,
+    
+    // if scroll happens, set it to the previous value
+    window.onscroll = function() {
+    window.scrollTo(LeftScroll, TopScroll);
+            };
+    }
+
+function enable() {
+    window.onscroll = function() {};
+    }
 
 navToggle.addEventListener('click', () => {
   links.classList.toggle('show_nav');
   bar1.classList.toggle('change1');
   bar2.classList.toggle('change2');
   bar3.classList.toggle('change3');
+  i += 1;
+  if (i % 2 == 0) {
+    enable();
+    } else {
+    disable();
+    }
 });
+
+   
 
 navLink1.addEventListener('click', () => {
   links.classList.remove('show_nav');
   bar1.classList.remove('change1');
   bar2.classList.remove('change2');
   bar3.classList.remove('change3');
+  enable();
 });
 
 navLink2.addEventListener('click', () => {
@@ -27,6 +54,7 @@ navLink2.addEventListener('click', () => {
   bar1.classList.remove('change1');
   bar2.classList.remove('change2');
   bar3.classList.remove('change3');
+  enable();
 });
 
 navLink3.addEventListener('click', () => {
@@ -34,6 +62,7 @@ navLink3.addEventListener('click', () => {
   bar1.classList.remove('change1');
   bar2.classList.remove('change2');
   bar3.classList.remove('change3');
+  enable();
 });
 
 navLink4.addEventListener('click', () => {
@@ -41,4 +70,5 @@ navLink4.addEventListener('click', () => {
   bar1.classList.remove('change1');
   bar2.classList.remove('change2');
   bar3.classList.remove('change3');
+  enable();
 });
