@@ -16,44 +16,120 @@
   width: 100vw;
   height: 100%;
   margin: 0;
-  padding: 5px 5px;
+  padding: 5px 0;
   box-sizing: inherit;
 }
 
-.portfolio,
-.contact,
-.about,
-.email {
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 2% 0;
+  font-size: 20px;
+}
+
+.main_nav {
   display: none;
 }
 
-.nav {
-  list-style: none;
-  display: grid;
-  grid-template-columns: [logo] 2fr 1fr;
-  grid-gap: 200px;
-  align-items: center;
-  padding: 0 10px;
-  position: fixed;
+.show_nav {
+  padding-top: 2%;
+  display: flex;
+  width: 375px;
+  height: 812px;
   overflow: hidden;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  background-image: url("./assets/hamburger_main_top.svg"), url("./assets/ham_bot.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right center;
+  background-size: 50%, 50%;
+}
+
+.main_nav li {
+  list-style: none;
   width: 100%;
-  height: 92px;
-  top: 16px;
+  height: 50px;
+  font-size: 20px;
+  justify-content: left;
+  text-align: left;
+  text-decoration: none;
+  margin: 20px 0 0 24px;
 }
 
-#union {
-  margin-right: 2.5rem;
-}
-
-#logo {
-  height: 16px;
-  line-height: 16px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  text-align: center;
-  letter-spacing: 0.03em;
+.nav_link1,
+.nav_link2,
+.nav_link3,
+.nav_link4 {
   color: #fff;
+  text-decoration: none;
+  width: 76vw;
+  margin-top: 10px;
+}
+
+.nav_items h1 {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
+  margin-left: 7px;
+}
+
+.nav_items {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.navbar_toggle {
+  margin-left: 5%;
+  margin-right: 15%;
+  font-size: 30px;
+  color: #fff;
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  display: block;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: all 0.4s linear;
+}
+
+/* Rotate first bar */
+.change1 {
+  transform: rotate(-45deg) translate(-6.3px, 5px);
+}
+
+/* Fade second bar */
+.change2 {
+  opacity: 0;
+}
+
+/* Rotate third bar */
+.change3 {
+  transform: rotate(45deg) translate(-10px, -10px);
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo_header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 24px;
 }
 
 .container-flex {
@@ -425,30 +501,71 @@
 }
 
 @media screen and (min-width: 768px) {
-  #union {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .navbar_toggle {
     display: none;
   }
 
-  .nav {
-    display: grid;
-    grid-template-columns: [introduction] 13fr [portfolio] 1fr [about] 1fr [contact] 1fr [contact] 1fr;
-    justify-items: flex-start;
-    align-items: center;
-    grid-gap: 0;
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    right: 24px;
-    height: 72px;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #000;
+    font-size: 20px;
   }
 
-  .portfolio,
-  .about,
-  .contact,
-  .email {
-    display: grid;
-    padding: 0 5px;
-    text-align: center;
+  .logo {
+    margin-left: 5%;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .logo_header {
+    display: flex;
+    margin-left: 2%;
+  }
+
+  .main_nav {
+    display: flex;
+    width: 50%;
+    float: right;
+    margin-right: 2%;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .main_nav li {
+    display: inline;
+    color: #fff;
+  }
+
+  .skills-flex div ul li {
+    list-style-type: none;
+    height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 1.33rem;
+    align-items: center;
+    color: #f5f5ff;
+    flex: none;
+    order: 0;
+    text-align: left;
+  }
+
+  .main_nav li:hover {
+    background-color: gray;
   }
 
   .portfolio a,
@@ -457,6 +574,10 @@
     text-decoration: none;
     color: #fff;
     transition: all 0.5s ease-out;
+  }
+
+  .main_nav li a {
+    color: #fff;
   }
 
   #logo {
@@ -580,20 +701,6 @@
   }
 
   .trait {
-    text-align: left;
-  }
-
-  .skills-flex div ul li {
-    list-style-type: none;
-    height: 24px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    margin-top: 1.33rem;
-    align-items: center;
-    color: #f5f5ff;
-    flex: none;
-    order: 0;
     text-align: left;
   }
 

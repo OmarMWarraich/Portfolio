@@ -8,21 +8,40 @@
     <title>Portfolio - A description of O-va's profile</title>
 </head>
 <body>
+    
     <div class="body-wrapper">
-        <section class="header">
-            <ul class="nav" id="nav">
-                <li><h5 id="logo">O-va</h5></li>
-                <li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
-                <li class="about"><a href="about.html">About</a></li>
-                <li class="contact"><a href="contact.html">Contact</a></li>
-                <li class="email"><a href="contact.html"><img src="./assets/email.png" alt="email"></a></li>
-                <li>
-                    <span>
-                        <img id="union" src="./assets/Union.png" alt='union-sign'/>
-                    </span>
-                </li>
-            </ul>
-        </section>
+            <nav class="nav" id="nav">
+                <div class="logo_header">  
+                  <a href="#" class="logo">Ova</a>
+                  <div class="navbar_toggle">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+                </div>
+                
+                <ul class="main_nav">
+                  <li class="nav_items">
+                    <a href="#work-flex" class="nav_link1">Portfolio</a>
+                    <h1>></h1>
+                  </li>
+                  <li class="nav_items">
+                    <a href="#hero" class="nav_link2">About</a>
+                    <h1>></h1>
+                  </li>
+                  <li class="nav_items">
+                    <a href="#form" class="nav_link3">Contact</a>
+                    <h1>></h1>
+                  </li>
+                  <li class="nav_items">
+                    <a href="#footer-email" class="nav_link4"><img src="./assets/email.png" alt="email"></a>
+                    <h1>></h1>
+                  </li>
+                  
+                </ul>
+                  
+              </nav>
+
         <section class="container-flex">
             <div class="hero" id="hero">
                 <h1>Omar Mohammad</h1>
@@ -81,7 +100,7 @@
                     <span class="bottom-span">&#8595; &nbsp;&nbsp; WORK</span>
             </div>   
         </section>
-        <section class="work-flex">
+        <section class="work-flex" id="work-flex">
             <div class="caption">
                 <h1>MY RECENT 
                     WORK
@@ -112,7 +131,7 @@
                     </ul>
                     </div>
                     <div class="submit">
-                    <button type="submit" class="btn" id="btn">
+                    <button onclick="" type="submit" class="btn" id="btn">
                         See Project
                     </button>
                     </div>
@@ -217,7 +236,7 @@
                 <div class="chat-desc">
                     <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
                 </div>
-                <form action="https://formspree.io/f/xlezyzng" method="post">
+                <form action="https://formspree.io/f/xlezyzng" method="post" id="form">
                     <div class="flname">
                         <input type="text"  name="nname" class="nname" placeholder="Name" maxlength="30" required>
                         <input type="text"  name="fname" class="fname" placeholder="First Name" maxlength="15" required>
@@ -237,10 +256,11 @@
                 <a href="#"><img alt= 'Twitter' src="./assets/Twitter.svg"></a>
                 <a href="#"><img alt= 'M' src="./assets/M.svg"></a>
             </div>
-            <div class="footer-email">
+            <div class="footer-email" id="footer-email">
                 <h4>email@email.com</h4>
             </div>               
         </section>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>  
