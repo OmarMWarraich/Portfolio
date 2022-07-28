@@ -10,6 +10,9 @@ const bar3 = document.querySelector('.bar3');
 let i = 0;
 let TopScroll;
 let LeftScroll;
+let modal = document.getElementById("myModal");
+let btn = document.getElementById("myBtn");
+let span = document.getElementsByClassName("close")[0];
 
 const disable = () => {
   // To get the scroll position of current webpage
@@ -32,11 +35,7 @@ navToggle.addEventListener('click', () => {
   bar2.classList.toggle('change2');
   bar3.classList.toggle('change3');
   i += 1;
-  if (i % 2 === 0) {
-    enable();
-  } else {
-    disable();
-  }
+  i % 2 === 0 ? enable() : disable();
 });
 
 navLink1.addEventListener('click', () => {
@@ -70,3 +69,23 @@ navLink4.addEventListener('click', () => {
   bar3.classList.remove('change3');
   enable();
 });
+
+// When the user clicks on the button, open the modal
+btn.onclick = () => {
+  modal.style.display = "block";
+  disable();
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = () => {
+  modal.style.display = "none";
+  enable();
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = (event) => {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    enable();
+  }
+} 

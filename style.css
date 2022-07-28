@@ -36,7 +36,7 @@
 .show_nav {
   padding-top: 2%;
   display: flex;
-  width: 375px;
+  width: 100vw;
   height: 812px;
   overflow: hidden;
   flex-direction: column;
@@ -432,6 +432,47 @@
   cursor: not-allowed;
 }
 
+ /* The Modal (background) */
+ .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  /* Fallback color */
+  background-color: rgb(0,0,0); 
+  /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color:rgba(255, 255, 255, 0.16)  ;
+  margin: 51px 24px 151px 24px; 
+  padding: 20px;
+  border: 1px solid #FFFFFF;
+  width: 87.2vw; 
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
 .footer {
   color: #fff;
   width: 87.2vw;
@@ -512,42 +553,34 @@
 
   .navbar_toggle {
     display: none;
-  }
-
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    background-color: #000;
-    font-size: 20px;
-  }
-
+  }  
+  
   .logo {
     margin-left: 5%;
     color: #fff;
     font-size: 25px;
     font-weight: bold;
+    margin-top: 18px;
   }
 
   .logo_header {
-    display: flex;
     margin-left: 2%;
+    display: grid;
+    height: 100px;
   }
 
   .main_nav {
     display: flex;
-    width: 50%;
+    width: 100%;
     float: right;
     margin-right: 2%;
     justify-content: space-between;
     list-style: none;
+    align-items: flex-start;
   }
 
   .main_nav li {
     display: inline;
-    color: #fff;
   }
 
   .skills-flex div ul li {
@@ -568,12 +601,20 @@
     background-color: gray;
   }
 
-  .portfolio a,
-  .about a,
-  .contact a {
-    text-decoration: none;
-    color: #fff;
-    transition: all 0.5s ease-out;
+  .nav_items {
+    display: flex;
+    align-content: center;
+  }
+
+  .nav_items h1 {
+    display: none;
+  }
+
+  .nav {
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    align-items: flex-start;
+    margin-top: 0px !important;
   }
 
   .main_nav li a {
