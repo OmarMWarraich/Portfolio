@@ -7,41 +7,41 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio - A description of O-va's profile</title>
 </head>
-<body>
-    
+<body>   
     <div class="body-wrapper">
             <nav class="nav" id="nav">
                 <div class="logo_header">  
-                  <a href="#" class="logo">Ova</a>
-                  <div class="navbar_toggle">
+                  <div class="logo">
+                        Ova
+                  </div>
+                  <div class="navbar_toggle" onclick="toggle();">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                   </div>
                 </div>
                 
+                <div>
                 <ul class="main_nav">
                   <li class="nav_items">
-                    <a href="#work-flex" class="nav_link1">Portfolio</a>
-                    <h1>></h1>
+                    <a href="#work-flex" class="nav_link" onclick="navlink();">Portfolio</a>
+                    <h2>></h2>
                   </li>
                   <li class="nav_items">
-                    <a href="#hero" class="nav_link2">About</a>
-                    <h1>></h1>
+                    <a href="#hero" class="nav_link" onclick="navlink();">About</a>
+                    <h2>></h2>
                   </li>
                   <li class="nav_items">
-                    <a href="#form" class="nav_link3">Contact</a>
-                    <h1>></h1>
+                    <a href="#form" class="nav_link" onclick="navlink();">Contact</a>
+                    <h2>></h2>
                   </li>
                   <li class="nav_items">
-                    <a href="#footer-email" class="nav_link4"><img src="./assets/email.png" alt="email"></a>
-                    <h1>></h1>
+                    <a href="#footer-email" class="nav_link" onclick="navlink();"><img src="./assets/email.png" alt="email"></a>
+                    <h2>></h2>
                   </li>
-                  
                 </ul>
-                  
+                </div>                  
               </nav>
-
         <section class="container-flex">
             <div class="hero" id="hero">
                 <h1>Omar Mohammad</h1>
@@ -96,15 +96,14 @@
                     <a href="#"><img alt= 'twitter' src="./assets/Twitter.svg"></a>
                     <a href="#"><img alt= 'M' src="./assets/M.svg"></a>
                 </div> 
-                
                     <span class="bottom-span">&#8595; &nbsp;&nbsp; WORK</span>
             </div>   
         </section>
         <section class="work-flex" id="work-flex">
             <div class="caption">
-                <h1>MY RECENT 
+                <h2>MY RECENT 
                     WORK
-                </h1>
+                </h2>
             </div>
             <hr>
             <div class = "work-container1">
@@ -113,9 +112,9 @@
                 </div>
                 <div class="specs" id="specs1">
                     <div class="hero1">
-                    <h1>
+                    <h2 class="hero1">
                         Multi-Post Stories
-                    </h1>
+                    </h2>
                     </div>
                     <div class="p">
                     <p>
@@ -131,18 +130,20 @@
                     </ul>
                     </div>
                     <div class="submit">
-                    <button onclick="" type="submit" class="btn" id="btn">
+                    <button onclick="fillpop();" type="submit" class="btn" id="myBtn">
                         See Project
                     </button>
                     </div>
                 </div>
             </div>
+
+            
             <div class = "work-container2">
                 <div class="img">
                     <img src="./assets/project.jpeg" alt="project-1">
                 </div>
                 <div class="specs" id="specs2">
-                    <div class="hero1">
+                    <div class="hero1" id="hero2">
                     <h1>
                         Multi-Post Stories
                     </h1>
@@ -152,7 +153,7 @@
                         A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
                     </p>
                     </div>
-                    <div class="ul">
+                    <div class="ul" id="ul">
                     <ul>
                         <li id="css1">css</li>
                         <li id="html1">html</li>
@@ -161,7 +162,7 @@
                     </ul>
                     </div>
                     <div class="submit">
-                    <button type="submit" class="btn">
+                    <button type="submit" onclick="fillpop();" class="btn" id="myBtn2">
                         See Project
                     </button>
                     </div>
@@ -191,14 +192,14 @@
                     </ul>
                     </div>
                     <div class="submit">
-                    <button type="submit" class="btn">
+                    <button type="submit" onclick="fillpop();" class="btn" id="myBtn3">
                         See Project
                     </button>
                     </div>
                 </div>
             </div>
             <div class = "work-container4">
-                <div class="img">
+                <div class="img" id="img2">
                     <img src="./assets/project.jpeg" alt="project-1">
                 </div>
                 <div class="specs" id="specs4">
@@ -221,7 +222,7 @@
                     </ul>
                     </div>
                     <div class="submit">
-                    <button type="submit" class="btn">
+                    <button type="submit" onclick="fillpop();" class="btn" id="myBtn4">
                         See Project
                     </button>
                     </div>
@@ -260,6 +261,44 @@
                 <h4>email@email.com</h4>
             </div>               
         </section>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="hero2" id="hero1">
+                <div>
+                  <h1></h1>
+                </div>
+                <div>
+                  <span class="close" onclick="spanbtn();">&times;</span>
+                </div>
+              </div>
+              <div id="img">
+                <img src="#" alt="project-1">      
+              </div>
+              <div id="p">
+                <p></p>
+              </div>  
+              <div id="ul1">
+                <ul>
+                    <li id="css7">css</li>
+                    <li>html</li>
+                    <li>bootstrap</li>
+                    <li>Ruby</li>
+                </ul>
+              </div>
+              <div id="project-buttons">
+                <button type="submit" class="btn" id="see_project" onclick="live();">     
+                        See Live
+                    <span><img src="./assets/foreign(1).png" alt = "" /></span>
+                </button>
+                <button type="submit" class="btn" id="see_source" onclick="project();">
+                    See Source
+                    <span><img src="./assets/Github.svg" alt = "" /></span>
+                </button>
+              </div>  
+            </div>
+          </div>
     </div>
     <script src="index.js"></script>
 </body>
