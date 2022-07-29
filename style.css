@@ -569,13 +569,14 @@
   align-items: center;
 }
 
-#see_source, #see_project {
+#see_source,
+#see_project {
   font-size: 12px;
   height: 48px;
 }
 
 #see_source {
-  width: 124px; 
+  width: 124px;
 }
 
 #see_project {
@@ -1206,15 +1207,16 @@
     align-items: center;
   }
 
-  #see_source, #see_project {
+  #see_source,
+  #see_project {
     font-size: 12px;
     height: 48px;
   }
-  
+
   #see_source {
-    width: 124px; 
+    width: 124px;
   }
-  
+
   #see_project {
     width: 124px;
   }
