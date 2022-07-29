@@ -14,6 +14,50 @@ let modal = document.getElementById("myModal");
 let btn = document.getElementById("myBtn");
 let span = document.getElementsByClassName("close")[0];
 
+const popArr = [
+  {
+    id: 1,
+    Name: '',
+    Author: '',
+    Pic: '',
+    Text: '',
+    Techs: ['Html', 'Css', 'JavaScript'],
+    Live: '',
+    Source: '',
+  },
+  {
+    id: 2,
+    Name: '',
+    Author: '',
+    Pic: '',
+    Text: '',
+    Techs: ['Html', 'Css', 'JavaScript'],
+    Live: '',
+    Source: '',
+  },
+  {
+    id: 3,
+    Name: '',
+    Author: '',
+    Pic: '',
+    Text: '',
+    Techs: ['Html', 'Css', 'JavaScript'],
+    Live: '',
+    Source: '',
+  },
+  {
+    id: 4,
+    Name: '',
+    Author: '',
+    Pic: '',
+    Text: '',
+    Techs: ['Html', 'Css', 'JavaScript'],
+    Live: '',
+    Source: '',
+  },
+];
+
+
 const disable = () => {
   // To get the scroll position of current webpage
   TopScroll = window.pageYOffset || document.documentElement.scrollTop;
