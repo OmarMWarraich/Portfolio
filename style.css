@@ -502,7 +502,6 @@
 }
 
 .modal-content #img {
-  margin: 24px 24px;
   height: 50vw;
   padding: 0;
 }
@@ -1135,13 +1134,12 @@
   }
 
   .modal-content .img {
-    margin: 24px 24px;
     height: 100%;
     padding: 0;
   }
 
   #img {
-    width: 100%;
+    width: 95%;
     height: 35%;
   }
 
