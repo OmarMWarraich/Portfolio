@@ -158,7 +158,6 @@ function mailValidation(input) {
 
   return null;
 }
-
 form.addEventListener('submit', (e) => {
   if ((mailValidation(emailEl.value) === 0)) {
     e.preventDefault();
