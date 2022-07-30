@@ -173,3 +173,33 @@ form.addEventListener('submit', (e) => {
     e.run();
   }
 });
+
+const content = () => {
+
+  const formContent = {
+    name: nameEl.value,
+    fname: fnameEl.value,
+    lname: lnameEl.value,
+    email: emailEl.value,
+    message: messageEl.value
+  }
+
+  window.localStorage.setItem('formContent', JSON.stringify(formContent));
+
+}
+
+
+window.onload = () => {
+  const formContent = JSON.parse(window.localStorage.getItem('formContent'));
+  if (formContent) {
+    nameEl.value = formContent.name;
+    fnameEl.value = formContent.fname;
+    lnameEl.value = formContent.lname;
+    emailEl.value = formContent.email;
+    messageEl.value = formContent.message;
+  }
+}
+
+
+
+
