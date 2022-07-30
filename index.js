@@ -175,19 +175,16 @@ form.addEventListener('submit', (e) => {
 });
 
 const content = () => {
-
   const formContent = {
     name: nameEl.value,
     fname: fnameEl.value,
     lname: lnameEl.value,
     email: emailEl.value,
-    message: messageEl.value
-  }
+    message: messageEl.value,
+  };
 
   window.localStorage.setItem('formContent', JSON.stringify(formContent));
-
-}
-
+};
 
 window.onload = () => {
   const formContent = JSON.parse(window.localStorage.getItem('formContent'));
@@ -198,8 +195,4 @@ window.onload = () => {
     emailEl.value = formContent.email;
     messageEl.value = formContent.message;
   }
-}
-
-
-
-
+};
