@@ -95,3 +95,82 @@ window.onclick = (event) => {
     enable();
   }
 };
+
+const form = document.querySelector('#form');
+const nameEl = document.querySelector('#nname');
+const fnameEl = document.querySelector('#fname');
+const lnameEl = document.querySelector('#lname');
+const emailEl = document.querySelector('#email');
+const messageEl = document.querySelector('#message');
+const error = document.querySelector('.error');
+
+function checkValidations() {
+  const letters = /^[a-zA-Z\s]*$/;
+  const name = nameEl.value.trim();
+  const fname = fnameEl.value.trim();
+  const lname = lnameEl.value.trim();
+  const email = emailEl.value.trim();
+  const message = messageEl.value.trim();
+
+  if ((name === '') && (fname === '' || lname === '')) {
+    error.innerText = 'Please fill name field!';
+    error.className = 'alert error';
+    return 0;
+  }
+  if ((!letters.test(name)) || ((!letters.test(fname)) && (!letters.test(lname)))) {
+    error.innerText = 'Please enter only characters!';
+    error.className = 'alert error';
+    return 0;
+  }
+
+  if ((name !== '') || (fname !== '' && lname !== '')) {
+    return 1;
+  }
+  if (email === '') {
+    error.innerText = 'Please fill out this field!';
+    error.className = 'alert error';
+    return 0;
+  }
+  if (!letters.test(name)) {
+    error.innerText = 'Please enter only characters!';
+    error.className = 'alert error';
+    return 0;
+  }
+
+  return null;
+}
+
+function mailValidation(input) {
+  const low = input.toLowerCase();
+
+  if (input !== low) {
+    error.innerText = 'Check your email format and try';
+    error.className = 'alert error';
+    document.getElementById('email').style.border = '3px solid red';
+    document.getElementById('email').style.boxShadow = 'box-shadow: 0 0 10px red;';
+    return 0;
+  }
+  if (input === low) {
+    error.innerText = 'Submitted Succesfully';
+    error.className = 'alert success';
+    return 1;
+  }
+
+  return null;
+}
+
+form.addEventListener('submit', (e) => {
+  if ((mailValidation(emailEl.value) === 0)) {
+    e.preventDefault();
+  } else {
+    e.run();
+  }
+});
+
+form.addEventListener('submit', (e) => {
+  if ((checkValidations() === 0)) {
+    e.preventDefault();
+  } else {
+    e.run();
+  }
+});
