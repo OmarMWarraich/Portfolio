@@ -174,7 +174,6 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-
 const saveInput = () => {
   const formContent = {
     name: nameEl.value,
