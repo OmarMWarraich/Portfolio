@@ -237,15 +237,17 @@
                 <div class="chat-desc">
                     <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
                 </div>
-                <form action="https://formspree.io/f/xlezyzng" method="post" id="form">
+                <form action="https://formspree.io/f/xbjbrdyg" method="post" id="form">
                     <div class="flname">
-                        <input type="text"  name="nname" class="nname" placeholder="Name" maxlength="30" required>
-                        <input type="text"  name="fname" class="fname" placeholder="First Name" maxlength="15" required>
-                        <input type="text"  name="lname" class="lname" placeholder="Last Name" maxlength="15" required>
+                        <input type="text"  id="nname" name="nname" class="nname" placeholder="Name" maxlength="30">
+                        <input type="text"  id="fname" name="fname" class="fname" placeholder="First Name" maxlength="15">
+                        <input type="text"  id="lname" name="lname" class="lname" placeholder="Last Name" maxlength="15">
                     </div>
-                    <input type="email" name="email" class="email1" placeholder="Email" required>
-                    <textarea name="message" class="text" id="message" cols="30" rows="10" placeholder="Enter text here." maxlength="500" required></textarea>
-                    <button type="submit" class="btn">Submit</button>
+                    <input type="email" id="email" name="email" class="email1" placeholder="Email" required>
+                    <textarea name="message" id="message" class="text" cols="30" rows="10" placeholder="Enter text here." maxlength="500" required></textarea>
+                    <span class="error" aria-live="polite"></span>
+                    <button type="submit" class="btn" onclick="">Submit</button>
+                    
                 </form>
             </div>    
         </section>
